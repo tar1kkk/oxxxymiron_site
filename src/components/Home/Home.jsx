@@ -1,8 +1,13 @@
 import React from 'react';
+import MainBanner from "./MainBanner";
+import TourItems from "../Tour/TourItems";
 
-function Home(props) {
+function Home() {
     return (
-        <div>Home</div>
+        <div className='main'>
+            <MainBanner/>
+            <TourItems/>
+        </div>
     );
 }
 
