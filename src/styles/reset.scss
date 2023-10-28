@@ -80,3 +80,20 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
 }
+.button-more {
+  color: $light;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-align: center;
+  cursor: pointer;
+  transition: .25s;
+
+  &:hover {
+    color: $action;
+  }
+}
