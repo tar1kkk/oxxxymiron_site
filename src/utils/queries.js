@@ -16,3 +16,21 @@ export const tourItemCollectionQuery = `
     }
   }
 `;
+
+export const trackCollectionQuery = `
+  {
+    trackCollection {
+      items {
+       sys {
+        id
+       }
+       date
+       title
+       description
+       cover {
+        url
+       }
+      }
+    }
+  }
+`;
