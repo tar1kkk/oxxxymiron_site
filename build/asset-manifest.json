@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c9d25125.css",
+    "main.js": "/static/js/main.c986279f.js",
+    "static/media/oxxxytour.mp4": "/static/media/oxxxytour.47d83b0b3f0704e7fb3d.mp4",
+    "static/media/text.webm": "/static/media/text.d628dc5d558acb60b7b0.webm",
+    "static/media/banner-glow.webp": "/static/media/banner-glow.7313b7c0dba063e963bf.webp",
+    "static/media/effect.webp": "/static/media/effect.641f0311714514773a3a.webp",
+    "static/media/banner.webp": "/static/media/banner.3a1c7177f2f763f3052f.webp",
+    "static/media/main-bg.webp": "/static/media/main-bg.99ad9f780d1dcee7870e.webp",
+    "static/media/tour-bg.webp": "/static/media/tour-bg.ca5289ce5d9a26515b33.webp",
+    "static/media/loader.webp": "/static/media/loader.e2614750c642228d9b45.webp",
+    "static/media/oxxxyshop.webp": "/static/media/oxxxyshop.decced1f65f3f4a9b2cb.webp",
+    "static/media/logo.webp": "/static/media/logo.ba0c8b6a290f1c9b93dc.webp",
+    "index.html": "/index.html",
+    "main.c9d25125.css.map": "/static/css/main.c9d25125.css.map",
+    "main.c986279f.js.map": "/static/js/main.c986279f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9d25125.css",
+    "static/js/main.c986279f.js"
+  ]
+}
