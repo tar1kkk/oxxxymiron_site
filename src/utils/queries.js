@@ -34,3 +34,20 @@ export const trackCollectionQuery = `
     }
   }
 `;
+
+export const newsItemCollectionQuery = `
+  {
+    newsItemCollection {
+      items {
+       sys {
+        id
+       }
+       title
+       date
+       cover {
+        url
+       }
+      }
+    }
+  }
+`;

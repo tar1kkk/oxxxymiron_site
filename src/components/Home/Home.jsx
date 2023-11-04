@@ -4,6 +4,7 @@ import TourItems from "../Tour/TourItems";
 import TourBanner from "./TourBanner";
 import Tracks from "../Tracks/Tracks";
 import ShopBanner from "./ShopBanner";
+import News from "../News/News";
 
 function Home() {
     return (
@@ -13,6 +14,7 @@ function Home() {
             <TourBanner/>
             <Tracks/>
             <ShopBanner/>
+            <News/>
         </div>
     );
 }

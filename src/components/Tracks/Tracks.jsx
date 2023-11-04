@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 
 import Section from "../Section/Section";
@@ -10,9 +10,10 @@ import Icon from "../Icon/Icon";
 import {getLocalDateString} from "../../utils/common";
 import {useDispatch, useSelector} from "react-redux";
 import {getTracksItems} from "../../reducers/tracksReducer";
+import Loader from "../Loader/Loader";
 
 const Tracks = () => {
-    const { items = [], isLoading } = useSelector((state)=> state.tracks);
+    const {items = [], isLoading} = useSelector((state) => state.tracks);
     const dispatch = useDispatch();
 
     const [audio] = useState(new Audio());
@@ -39,10 +40,10 @@ const Tracks = () => {
     return (
         <Section className="tracks-section">
             <div className="container">
-                <SectionTitle text="Релизы" />
+                <SectionTitle text="Релизы"/>
 
                 {isLoading == 'loading' ? (
-                    <h2>Loading</h2>
+                    <Loader/>
                 ) : (
                     <div className="tracks">
                         {items
@@ -51,7 +52,7 @@ const Tracks = () => {
                                 const {
                                     cover,
                                     title,
-                                    sys: { id },
+                                    sys: {id},
                                     date,
                                 } = track;
 
@@ -67,12 +68,12 @@ const Tracks = () => {
                                             onClick={() => handleTrackClick(track)}
                                         >
                                             <div className="track-image">
-                                                <img src={cover.url} alt={title} />
+                                                <img src={cover.url} alt={title}/>
                                                 {!!playing && currentTrack.sys.id === id && (
-                                                    <Icon name="pause" />
+                                                    <Icon name="pause"/>
                                                 )}
                                             </div>
-                                            <p className="track-date">{getLocalDateString(date, { month: "short" })}
+                                            <p className="track-date">{getLocalDateString(date, {month: "short"})}
                                             </p>
                                             <h3 className="track-title">{title}</h3>
                                         </div>

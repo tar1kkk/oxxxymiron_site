@@ -2,7 +2,7 @@ import React from 'react';
 import {SOCIALS} from "../../utils/constants";
 import Icon from "../Icon/Icon";
 
-function Socials(props) {
+function Socials() {
     return (
         <ul className="socials">
             {SOCIALS.map(({icon,link})=>(
